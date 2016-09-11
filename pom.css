@@ -1,0 +1,163 @@
+
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
+@import 'https://fonts.googleapis.com/css?family=Pacifico';
+
+body {
+    background-color: /*#37bd5b*/ #FFC857;
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+.container-fluid {
+    margin: 0px;
+    padding: 0px;
+}
+
+#pom {
+    position: absolute;
+    margin: 50px 0px 100px 85px;
+    font-size: 2em;
+    opacity: 0.2;
+    font-family: 'Pacifico', cursive;
+}
+
+#time {
+    font-size: 4em;
+    color: #FFFFD7;
+    z-index: 10;
+    margin: 105px 50px 0px 15px;
+    position: absolute;
+}
+
+#allthings {
+    text-align: center;
+    position: relative;
+    transform: translateY(15%);
+    -webkit-transform: translateY(15%);
+    -ms-transform: translateY(15%);
+}
+
+#tomato {
+    background-color: #D72028;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 8px solid #A01C20;
+    z-index: 10;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    /*margin-top: 230px;*/
+}
+
+input {
+    height: 40px;
+    width: 70px;
+    margin-top: 10px;
+    background-color: #FFFFD7;
+    border: 1px solid #A01C20;
+    color: #7d1416;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+::-webkit-input-placeholder {
+    color: #cba;
+}
+:-moz-placeholder {
+    color: #cba;
+}
+::-moz-placeholder {
+    color: #cba;
+}
+:-ms-input-placeholder {
+    color: #cba;
+}
+
+#change {
+    height: 35px;
+    font-size: 1em;
+    background-color: #EB4539 !important;
+    border: none;
+    color: #FFFFD7;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#change:active {
+    background-color: #d63a2f !important;
+}
+
+#controlla {
+    margin-top: 3em;
+    padding: 3px;
+    background: #D72028;
+    border-top: 4px solid #A01C20;
+    border-bottom: 4px solid #A01C20;
+    display: absolute;
+}
+
+
+#reset {
+    height: 50px;
+    background-color: #EB4539;
+    /*border: 1px solid #A01C20;*/
+    border: none;
+    color: bisque;
+    font-size: 2em;
+    margin-right: 5px;
+}
+
+#reset:active {
+    background-color: #d63a2f;
+}
+
+#go {
+    height: 50px;
+    width: 50px;
+    background-color: #EB4539;
+    /*border: 1px solid #A01C20;*/
+    border: none;
+    color: bisque;
+    font-size: 2em;
+}
+
+#go:active {
+    background-color: #d63a2f;
+}
+
+#gores {
+    z-index: 10;
+    text-align: center;
+    padding-top: 177px;
+}
+
+#pause {
+    height: 50px;
+    width: 50px;
+    background-color: #EB4539;
+    border: none;
+    color: bisque;
+    font-size: 2em;
+    display: inline-block;
+    z-index: 10;
+    text-align: center;
+}
+
+#pause:active {
+   background-color: #d63a2f; 
+}
+
+#controlla p {
+    color: #7d1416;
+}
+
+#mid {
+    display: inline-block;
+    color:antiquewhite !important;
+    font-size: 2em;
+}

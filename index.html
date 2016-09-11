@@ -1,0 +1,67 @@
+
+<html>
+
+<head>
+  <meta charset=utf-8/>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="pom.css" />
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" />
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/themes/smoothness/jquery-ui.css">
+  <script src="https://use.fontawesome.com/58bcbed17c.js"></script>
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+  <title>Pomodoro Timer</title>
+
+</head>
+
+
+<body>
+    
+    <div class="container-fluid">
+        
+        
+        <div id="allthings">
+            <div id="tomato">
+                
+                <p id="pom">Pomodoro</p>
+                
+                <h1 id="time">00:25:00</h1>
+                
+                
+                <div id="gores">
+                    <button id="reset">reset</button>
+                    <button id="go" onclick="lockout(this)"><i class="fa fa-play"></i></button>
+                    <button id="pause" onclick="pause()"><i class="fa fa-pause"></i></button>
+                </div>
+        </div>
+            
+            <div id="controlla">
+                <form id="choose">
+                    <input type="text" id="hrs" name="hrs" size="2" maxlength="2" placeholder="h" value="00"/> <p id="mid">:</p>
+                    <input type="text" id="mns" name="mns" size="2" maxlength="2" placeholder="m" value="25"/> <p id="mid">:</p>
+                    <input type="text" id="scs" name="scs" size="2" maxlength="2" placeholder="s" value="00"/>
+                </form>
+                    <button id="change">change</button>
+                <p>Choose the length of time and press change!</p>
+            </div>
+            
+        </div>
+        
+        
+    </div>
+
+
+  <!-- jQuery & Boostrap files -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="pom.js"></script>
+</body>
+
+</html>
