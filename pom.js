@@ -1,4 +1,6 @@
-//countdown 
+/***************************
+* The Countdown
+****************************/
 var clr;
 function count() {
     var startTime = document.getElementById("time").innerHTML;
@@ -17,14 +19,16 @@ function count() {
         new Audio("https://www.dropbox.com/s/rw5fqbyui06h0mo/30161__herbertboland__belltinystrike.wav?dl=1").play();
         clearInterval(clr);
     }
-    
     if ($("#time").html() === "00:00:00") {
         document.getElementById("go").disabled = "disabled";
         document.getElementById("pause").disabled = "disabled";
     }
 }
 
-//change the time
+
+/************************
+* Change the time
+*************************/
 function changeTime() {
     var h = parseInt(hrs.value);
     var m = parseInt(mns.value);
@@ -60,7 +64,7 @@ function changeTime() {
     $("#time").html(h + ":" + m + ":" + s);
 }
 
-//change time
+//click to change the time
 $("#change").click(function() {
     changeTime();
     $("body").stop();
@@ -76,7 +80,9 @@ $("#change").click(function() {
     }
 })
 
-//start countdown
+/***********************
+* Start the countdown
+************************/
 $("#go").click(function() {
   var startTime = document.getElementById("time").innerHTML;
   var pieces = startTime.split(":");
@@ -85,6 +91,8 @@ $("#go").click(function() {
   time.setMinutes(pieces[1]);
   time.setSeconds(pieces[2]);
   var timerSec=time.getSeconds()+time.getMinutes()*60+time.getHours()*3600;
+    
+  //animate the background    
   $("body").animate({
     backgroundColor: "#D72028"
   }, timerSec*1000);
@@ -96,7 +104,9 @@ $("#go").click(function() {
 
 
 
-//reset countdown
+/****************
+* Reset timer
+*****************/
 $("#reset").click(function() {
     $("#time").html(changeTime());
     clearInterval(clr);
@@ -105,7 +115,9 @@ $("#reset").click(function() {
     document.getElementById("go").disabled = "";
 })
 
-//pause timer
+/****************
+* Pause timer
+*****************/
 $("#pause").click(function() {
    clearInterval(clr); 
    $("body").stop();
