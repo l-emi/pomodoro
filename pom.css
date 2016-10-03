@@ -3,7 +3,7 @@
 @import 'https://fonts.googleapis.com/css?family=Pacifico';
 
 body {
-    background-color: /*#37bd5b*/ #FFC857;
+    background-color: #FFC857;
     font-family: 'Montserrat', sans-serif;
     height: 100%;
     width: 100%;
@@ -49,7 +49,6 @@ body {
     text-align: center;
     display: inline-block;
     position: relative;
-    /*margin-top: 230px;*/
 }
 
 input {
